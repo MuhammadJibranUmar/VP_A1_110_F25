@@ -1,0 +1,15 @@
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/bin/Debug/net8.0/VP_Assignment1
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/bin/Debug/net8.0/VP_Assignment1.deps.json
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/bin/Debug/net8.0/VP_Assignment1.runtimeconfig.json
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/bin/Debug/net8.0/VP_Assignment1.dll
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/bin/Debug/net8.0/VP_Assignment1.pdb
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.AssemblyInfoInputs.cache
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.AssemblyInfo.cs
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.csproj.CoreCompileInputs.cache
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.sourcelink.json
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.dll
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/refint/VP_Assignment1.dll
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.pdb
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/VP_Assignment1.genruntimeconfig.cache
+/home/muhammadjibranumar/jibran/coding/dotnet/VP_Assignment1/obj/Debug/net8.0/ref/VP_Assignment1.dll
