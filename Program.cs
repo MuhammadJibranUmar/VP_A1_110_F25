@@ -20,6 +20,7 @@ class Program
             Console.WriteLine("[0]. Even Or Odd Checker ");
             Console.WriteLine("[1]. Simple Calculator ");
             Console.WriteLine("[2]. Grade Evaluator");
+            Console.WriteLine("[3]. Sum of Natural Numbers (Loop)");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -36,8 +37,12 @@ class Program
                     obj.Question2();
                     break;
                 case '2':
-                    Console.WriteLine("\n Question No. 3: \n");
+                    Console.WriteLine("\nQuestion No. 3: \n");
                     obj.Question3();
+                    break;
+                case '3':
+                    Console.WriteLine("\nQuestion No. 4: \n");
+                    obj.Question4();
                     break;
                 case 'q':
                     break;
@@ -121,5 +126,19 @@ class Program
         Console.WriteLine(
             "Evaluated Grade for Marks " + marks + " is " + evaluator.evaluate() + "."
         );
+    }
+
+    void Question4()
+    {
+        int sum = 0;
+        Console.WriteLine("\nEnter a number: ");
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= n; i++)
+        {
+            sum += i;
+        }
+
+        Console.WriteLine("The sum of numbers from 1 to " + n + " is " + sum);
     }
 }
