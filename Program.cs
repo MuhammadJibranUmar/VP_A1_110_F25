@@ -22,6 +22,7 @@ class Program
             Console.WriteLine("[2]. Grade Evaluator");
             Console.WriteLine("[3]. Sum of Natural Numbers (Loop)");
             Console.WriteLine("[4]. Multiplication Table");
+            Console.WriteLine("[5]. Factorial Calculator");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -48,6 +49,10 @@ class Program
                 case '4':
                     Console.WriteLine("\nQuestion No. 5: \n");
                     obj.Question5();
+                    break;
+                case '5':
+                    Console.WriteLine("\nQuestion No. 6: \n");
+                    obj.Question6();
                     break;
                 case 'q':
                     break;
@@ -149,7 +154,7 @@ class Program
 
     void Question5()
     {
-        Console.WriteLine("\n Enter a number to print Multiplication Table: ");
+        Console.WriteLine("\nEnter a number to print Multiplication Table: ");
         int number = int.Parse(Console.ReadLine());
 
         SimpleCalculator calculator = new SimpleCalculator();
@@ -158,6 +163,27 @@ class Program
         {
             Console.WriteLine(number + " x " + i + " = " + calculator.multiply(number, i));
         }
+    }
 
+    void Question6()
+    {
+        Console.WriteLine("\nEnter a number to calculate its factorial: ");
+        int number = int.Parse(Console.ReadLine());
+
+        if (number < 0)
+        {
+            number *= -1;
+        }
+
+        SimpleCalculator calculator = new SimpleCalculator();
+        int factorial = 1;
+        int n = number;
+
+        while (n != 1)
+        {
+            factorial = calculator.multiply(n--, factorial);
+        }
+
+        Console.WriteLine("Factorial of " + number + " is " + factorial);
     }
 }
