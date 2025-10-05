@@ -21,6 +21,7 @@ class Program
             Console.WriteLine("[1]. Simple Calculator ");
             Console.WriteLine("[2]. Grade Evaluator");
             Console.WriteLine("[3]. Sum of Natural Numbers (Loop)");
+            Console.WriteLine("[4]. Multiplication Table");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -43,6 +44,10 @@ class Program
                 case '3':
                     Console.WriteLine("\nQuestion No. 4: \n");
                     obj.Question4();
+                    break;
+                case '4':
+                    Console.WriteLine("\nQuestion No. 5: \n");
+                    obj.Question5();
                     break;
                 case 'q':
                     break;
@@ -140,5 +145,19 @@ class Program
         }
 
         Console.WriteLine("The sum of numbers from 1 to " + n + " is " + sum);
+    }
+
+    void Question5()
+    {
+        Console.WriteLine("\n Enter a number to print Multiplication Table: ");
+        int number = int.Parse(Console.ReadLine());
+
+        SimpleCalculator calculator = new SimpleCalculator();
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(number + " x " + i + " = " + calculator.multiply(number, i));
+        }
+
     }
 }
