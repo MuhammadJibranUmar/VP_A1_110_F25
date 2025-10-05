@@ -1,9 +1,9 @@
-class simpleCalculator
+class SimpleCalculator
 {
     private double num1;
     private double num2;
 
-    public simpleCalculator(double a, double b)
+    public SimpleCalculator(double a, double b)
     {
         num1 = a;
         num2 = b;

@@ -17,8 +17,9 @@ class Program
         do
         {
             Console.WriteLine("\nChoose From Following: ");
-            Console.WriteLine("[0]. Check Even Or Odd ");
+            Console.WriteLine("[0]. Even Or Odd Checker ");
             Console.WriteLine("[1]. Simple Calculator ");
+            Console.WriteLine("[2]. Grade Evaluator");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -33,6 +34,10 @@ class Program
                 case '1':
                     Console.WriteLine("\nQuestion No. 2: \n");
                     obj.Question2();
+                    break;
+                case '2':
+                    Console.WriteLine("\n Question No. 3: \n");
+                    obj.Question3();
                     break;
                 case 'q':
                     break;
@@ -80,7 +85,7 @@ class Program
             Console.WriteLine("\nEnter the second Number: ");
             double number2 = double.Parse(Console.ReadLine());
 
-            simpleCalculator calculator = new simpleCalculator(number1, number2);
+            SimpleCalculator calculator = new SimpleCalculator(number1, number2);
 
             switch (keyInfo.KeyChar)
             {
@@ -96,11 +101,25 @@ class Program
                 case '/':
                     Console.WriteLine(number1 + " / " + number2 + " = " + calculator.divide());
                     break;
-
                 default:
                     Console.WriteLine("Try Again...");
                     break;
             }
         } while (num != "00");
+    }
+
+    void Question3()
+    {
+        int marks;
+        do
+        {
+            Console.WriteLine("\nEnter Marks (0-100): ");
+            marks = int.Parse(Console.ReadLine());
+        } while (marks < 0 || marks > 100);
+        GradeEvaluator evaluator = new GradeEvaluator(marks);
+
+        Console.WriteLine(
+            "Evaluated Grade for Marks " + marks + " is " + evaluator.evaluate() + "."
+        );
     }
 }
