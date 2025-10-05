@@ -23,6 +23,7 @@ class Program
             Console.WriteLine("[3]. Sum of Natural Numbers (Loop)");
             Console.WriteLine("[4]. Multiplication Table");
             Console.WriteLine("[5]. Factorial Calculator");
+            Console.WriteLine("[6]. Reverse a Number");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -53,6 +54,10 @@ class Program
                 case '5':
                     Console.WriteLine("\nQuestion No. 6: \n");
                     obj.Question6();
+                    break;
+                case '6':
+                    Console.WriteLine("\nQuestion No. 7: \n");
+                    obj.Question7();
                     break;
                 case 'q':
                     break;
@@ -185,5 +190,20 @@ class Program
         }
 
         Console.WriteLine("Factorial of " + number + " is " + factorial);
+    }
+
+    void Question7()
+    {
+        Console.WriteLine("\nEnter a number to reverse: ");
+        int number = int.Parse(Console.ReadLine());
+
+        if (number < 0)
+        {
+            number *= -1;
+        }
+
+        ReverseNumber obj = new ReverseNumber();
+
+        Console.WriteLine("Reversed Number of " + number + " is " + obj.reverse(number));
     }
 }
