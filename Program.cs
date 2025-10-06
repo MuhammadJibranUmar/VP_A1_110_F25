@@ -25,6 +25,7 @@ class Program
             Console.WriteLine("[5]. Factorial Calculator");
             Console.WriteLine("[6]. Reverse a Number");
             Console.WriteLine("[7]. Array - Find Maximum and Minimum");
+            Console.WriteLine("[8]. Array - Count Even and Odd Numbers");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -63,6 +64,10 @@ class Program
                 case '7':
                     Console.WriteLine("\nQuestion No. 8: \n");
                     obj.Question8();
+                    break;
+                case '8':
+                    Console.WriteLine("\nQuestion No. 9: \n");
+                    obj.Question9();
                     break;
                 case 'q':
                     break;
@@ -239,5 +244,34 @@ class Program
 
         Console.WriteLine("Minimum: " + min);
         Console.WriteLine("Maximum: " + max);
+    }
+
+    void Question9()
+    {
+        int[] arr = new int[10];
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("Enter a number: ");
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        int even = 0;
+        int odd = 0;
+        EvenOdd obj1 = new EvenOdd();
+
+        for (int i = 0; i < 10; i++)
+        {
+            if (obj1.isEven(arr[i]))
+            {
+                even++;
+            }
+            else
+            {
+                odd++;
+            }
+        }
+
+        Console.WriteLine("Even: " + even);
+        Console.WriteLine("Odd: " + odd);
     }
 }

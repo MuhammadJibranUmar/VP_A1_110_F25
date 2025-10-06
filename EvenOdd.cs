@@ -9,8 +9,18 @@ class EvenOdd
         num = n;
     }
 
+    public EvenOdd()
+    {
+        //
+    }
+
     public bool isEven()
     {
         return (num % 2 == 0);
+    }
+
+    public bool isEven(int n)
+    {
+        return (n % 2 == 0);
     }
 }
