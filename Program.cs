@@ -26,6 +26,7 @@ class Program
             Console.WriteLine("[6]. Reverse a Number");
             Console.WriteLine("[7]. Array - Find Maximum and Minimum");
             Console.WriteLine("[8]. Array - Count Even and Odd Numbers");
+            Console.WriteLine("[9]. Array - Search Element");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -68,6 +69,10 @@ class Program
                 case '8':
                     Console.WriteLine("\nQuestion No. 9: \n");
                     obj.Question9();
+                    break;
+                case '9':
+                    Console.WriteLine("\nQuestion No. 10: \n");
+                    obj.Question10();
                     break;
                 case 'q':
                     break;
@@ -273,5 +278,27 @@ class Program
 
         Console.WriteLine("Even: " + even);
         Console.WriteLine("Odd: " + odd);
+    }
+
+    void Question10()
+    {
+        int[] arr = new int[10];
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("Enter a number: ");
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine("Number to Search: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 0; i < 10; i++)
+        {
+            if (num == arr[i])
+            {
+                Console.WriteLine(num + " found at index " + i);
+                break;
+            }
+        }
     }
 }
