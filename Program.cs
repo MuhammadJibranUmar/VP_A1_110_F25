@@ -24,6 +24,7 @@ class Program
             Console.WriteLine("[4]. Multiplication Table");
             Console.WriteLine("[5]. Factorial Calculator");
             Console.WriteLine("[6]. Reverse a Number");
+            Console.WriteLine("[7]. Array - Find Maximum and Minimum");
             Console.WriteLine("[q]. Exit ");
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -58,6 +59,10 @@ class Program
                 case '6':
                     Console.WriteLine("\nQuestion No. 7: \n");
                     obj.Question7();
+                    break;
+                case '7':
+                    Console.WriteLine("\nQuestion No. 8: \n");
+                    obj.Question8();
                     break;
                 case 'q':
                     break;
@@ -205,5 +210,34 @@ class Program
         ReverseNumber obj = new ReverseNumber();
 
         Console.WriteLine("Reversed Number of " + number + " is " + obj.reverse(number));
+    }
+
+    void Question8()
+    {
+        int[] arr = new int[10];
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("Enter a number: ");
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        int min = arr[0];
+        int max = arr[0];
+
+        for (int i = 1; i < 10; i++)
+        {
+            if (min > arr[i])
+            {
+                min = arr[i];
+            }
+
+            if (max < arr[i])
+            {
+                max = arr[i];
+            }
+        }
+
+        Console.WriteLine("Minimum: " + min);
+        Console.WriteLine("Maximum: " + max);
     }
 }
