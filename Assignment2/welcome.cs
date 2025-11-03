@@ -10,7 +10,7 @@ namespace Assignment2
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            (new loginform()).Show();
+            (new loginform(1)).Show();
         }
     }
 }

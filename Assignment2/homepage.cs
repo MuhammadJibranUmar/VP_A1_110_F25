@@ -26,7 +26,7 @@ namespace Assignment2
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            (new loginform()).Show();
+            (new loginform(1)).Show();
         }
     }
 }
