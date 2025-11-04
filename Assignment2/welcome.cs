@@ -12,5 +12,11 @@ namespace Assignment2
             this.Hide();
             (new loginform(1)).Show();
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            (new loginform(2)).Show();
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Assignment2
                             (new homepage()).Show();
                             break;
                         case 2:
+                            (new q2dashboard()).Show();
                             break;
                         case 3:
                             (new homepage()).Show();

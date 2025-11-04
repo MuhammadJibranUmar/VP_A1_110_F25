@@ -60,7 +60,7 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Question No. 1";
             linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
-            linkLabel1.LinkClicked += this.linkLabel1_LinkClicked;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // linkLabel2
             // 
@@ -94,6 +94,7 @@
             linkLabel4.TabStop = true;
             linkLabel4.Text = "Question No. 2";
             linkLabel4.TextAlign = ContentAlignment.MiddleCenter;
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
             // 
             // linkLabel5
             // 
@@ -105,7 +106,6 @@
             linkLabel5.TabStop = true;
             linkLabel5.Text = "Question No. 5";
             linkLabel5.TextAlign = ContentAlignment.MiddleCenter;
-           // linkLabel5.LinkClicked += this.linkLabel5_LinkClicked;
             // 
             // linkLabel6
             // 
