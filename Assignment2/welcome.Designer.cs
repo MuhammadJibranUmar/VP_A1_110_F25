@@ -83,6 +83,7 @@
             linkLabel3.TabStop = true;
             linkLabel3.Text = "Question No. 3";
             linkLabel3.TextAlign = ContentAlignment.MiddleCenter;
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
             // linkLabel4
             // 
